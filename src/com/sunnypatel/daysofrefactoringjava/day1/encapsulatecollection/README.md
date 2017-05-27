@@ -1,7 +1,7 @@
 In certain scenarios it is beneficial to not expose a full collection to consumers of a class. 
 Some of these circumstances is when there is additional logic associated with adding/removing items from a collection. 
 Because of this reason, it is a good idea to only expose the collection as something you can iterate over without modifying the collection. Let’s take a look at some code
-
+``` Java
    1: public class Order
    2: {
    3:     private List<OrderLine> _orderLines;
@@ -26,6 +26,6 @@ Because of this reason, it is a good idea to only expose the collection as somet
   22:         _orderLines.Remove(orderLine);
   23:     }
   24: }
- 
+ ```
 
 As you can see, we have encapsulated the collection as to not expose the Add/Remove methods to consumers of this class. There is some other types in the .Net framework that will produce different behavior for encapsulating a collection such as ReadOnlyCollection but they do have different caveats with each. This is a very straightforward refactoring and one worth noting. Using this can ensure that consumers do not mis-use your collection and introduce bugs into the code.
