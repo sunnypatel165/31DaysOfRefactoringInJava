@@ -1,4 +1,4 @@
-#### 31DaysOfRefactoringInJava
+## 31DaysOfRefactoringInJava
 
 Most part of my job is to work on a piece of code that's already written by someone.
 When I read such code, I often like to think(sometimes actually do) about changing things to make the code better. 
@@ -20,7 +20,7 @@ I will try to add one lesson each day!
 
 Feel free to contribute! :D
 
-## Contents:
+#### Contents:
 
 [Day 1 - Encapsulate Collection](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day1/encapsulatecollection)
 
