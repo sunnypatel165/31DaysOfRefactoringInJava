@@ -1,4 +1,4 @@
-## 31DaysOfRefactoringInJava
+#### 31DaysOfRefactoringInJava
 
 Most part of my job is to work on a piece of code that's already written by someone.
 When I read such code, I often like to think(sometimes actually do) about changing things to make the code better. 
@@ -19,5 +19,11 @@ But the point is not to teach Java, it's about engendering the thought of Reafct
 I will try to add one lesson each day! 
 
 Feel free to contribute! :D
+
+## Contents:
+
+[Day 1 - Encapsulate Collection](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day1/encapsulatecollection)
+
+[Day 2 - Move Method](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day2/movemethod)
 
 ![Motivation](http://s2.quickmeme.com/img/a5/a513a0245a5f0382c8a823cbd1017024f70442c0c1800400281cec8057a10c12.jpg)
