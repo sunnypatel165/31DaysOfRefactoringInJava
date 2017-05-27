@@ -1,11 +1,11 @@
-##31DaysOfRefactoringInJava
+## 31DaysOfRefactoringInJava
 
 Most part of my job is to work on a piece of code that's already written by someone.
 When I read such code, I often like to think(sometimes actually do) about changing things to make the code better. 
 And I also wonder, how a piece of code I am writing today, will be changed by someone else in future. 
 Coz that's what a lot of jobs demand - to be able to re-use/improve/extend code already written. 
 
-So I thought of reading a bit about Refactoring, and upon googling, I came acorss this book called 31 Days of Refactoring by Sean Chambers, Simone Chiaretta.
+So I thought of reading a bit about Refactoring, and upon googling, I came acorss this book called [31 Days of Refactoring by Sean Chambers, Simone Chiaretta](https://lostechies.com/wp-content/uploads/2011/03/31DaysRefactoring.pdf).
 It is a great book - clear and concise. It has one lesson per day, but you can really finish the entire book in a day. 
 
 The book is originally written for .net as a language. 
