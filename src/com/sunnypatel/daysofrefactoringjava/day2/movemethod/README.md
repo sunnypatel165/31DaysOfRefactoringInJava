@@ -89,7 +89,7 @@ public class AccountInterest {
 		
 		return 0.05;
 	}
-
+}
 public class BankAccount {
 	private int accountAge;
 	private int creditStore;
@@ -124,12 +124,13 @@ public class BankAccount {
 	public void setAccountInterest(AccountInterest accountInterest) {
 		this.accountInterest = accountInterest;
 	}
+}
 ```
 
 Simple enough!
 
 #### Original C# code from the book:
-```Java
+```
    1: public class BankAccount
    2: {
    3:     public BankAccount(int accountAge, int creditScore, AccountInterest accountInterest)
