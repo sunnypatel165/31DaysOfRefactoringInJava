@@ -28,4 +28,6 @@ Feel free to contribute! :D
 
 [Day 3 - Pull Up Method](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day3/pullupmethod)
 
+[Day 4 - Push Down Method](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day4/pushdownmethod)
+
 ![Motivation](http://s2.quickmeme.com/img/a5/a513a0245a5f0382c8a823cbd1017024f70442c0c1800400281cec8057a10c12.jpg)
