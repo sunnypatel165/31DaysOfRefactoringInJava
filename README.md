@@ -32,4 +32,6 @@ Feel free to contribute! :D
 
 [Day 5 - Pull Up Field](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day5/pullupfield)
 
+[Day 6 - Push Down Field](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day6/pushdownfield)
+
 ![Motivation](http://s2.quickmeme.com/img/a5/a513a0245a5f0382c8a823cbd1017024f70442c0c1800400281cec8057a10c12.jpg)
