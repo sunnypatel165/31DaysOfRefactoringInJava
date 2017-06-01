@@ -12,8 +12,7 @@ public class Person
 	public void setFN(String fN) {
 		this.FN = fN;
 	}
-	public double ClcHrlyPR()
-    {
+	public double ClcHrlyPR() {
         // code to calculate hourly payrate
         return 0.0;
     }
@@ -31,8 +30,7 @@ public class Person
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-	public double calculateHourlyPayRate()
-    {
+	public double calculateHourlyPayRate() {
         // code to calculate hourly payrate
         return 0.0;
     }
