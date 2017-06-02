@@ -37,7 +37,7 @@ public class Child {
 }
 ```
  
-This refactoring comes from Martin Fowlers Refactoring book. You can view the original refactoring at: https://refactoring.com/catalog/replaceInheritanceWithDelegation.html
+This refactoring comes from Martin Fowlers Refactoring book. You can view the original refactoring [here](https://refactoring.com/catalog/replaceInheritanceWithDelegation.html).
 
 #### Original C# code from the book:
 ```
@@ -53,7 +53,7 @@ This refactoring comes from Martin Fowlers Refactoring book. You can view the or
   10: {
   11: }
   
-    1: public class Sanitation
+   1: public class Sanitation
    2: {
    3:     public string WashHands()
    4:     {
