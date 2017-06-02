@@ -41,7 +41,7 @@ This refactoring comes from Martin Fowlers Refactoring book. You can view the or
 
 #### Original C# code from the book:
 ```
-  1: public class Sanitation
+   1: public class Sanitation
    2: {
    3:     public string WashHands()
    4:     {
