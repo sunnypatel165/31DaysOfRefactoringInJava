@@ -58,6 +58,7 @@ This refactoring was first published by Martin Fowler and can be found in his li
 
 #### Original C# code from the book
 
+```
    1: public class ClassRegistration
    2: {
    3:     public void Create()
