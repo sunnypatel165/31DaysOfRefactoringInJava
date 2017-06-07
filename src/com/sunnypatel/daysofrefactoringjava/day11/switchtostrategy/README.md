@@ -1,4 +1,4 @@
-Todays refactoring doesn't come from any one source, rather I've used different versions over the years
+Today's refactoring doesn't come from any one source, rather I've used different versions over the years
 and I'm sure other have different variations of the same aim.
 This refactoring is used when you have a larger switch statement that continually changes because of new
 conditions being added. In these cases it’s often better to introduce the strategy pattern and encapsulate
@@ -47,11 +47,11 @@ public class Client {
 }
 ```
 
-To apply this refactoring take the condition that is being tested and place it in it’s own class that adheres to
+To apply this refactoring take the condition that is being tested and place it in its own class that adheres to
 a common interface. Then by passing the enum as the dictionary key, we can select the proper
 implementation and execute the code at hand. In the future when you want to add another condition, add
 another implementation and add the implementation to the ShippingCalculations dictionary. As I stated
-before, this is not the only option to implement the strategy pattern. I bold that because I know someone
+before, **this is not the only option to implement the strategy pattern**. I bold that because I know someone
 will bring this up in the comments :) Use what works for you. The benefit of doing this refactoring in this
 manner is that none of your client code will need to change. All of the modifications exist within the
 ShippingInfo class.
