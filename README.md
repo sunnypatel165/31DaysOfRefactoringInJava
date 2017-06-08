@@ -46,4 +46,6 @@ Feel free to contribute! :D
 
 [Day 12 - Break Dependencies ](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day12/breakdependencies)
 
+[Day 13 - Extract Method Objects ](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day13/extractmethodobjects)
+
 ![Motivation](http://s2.quickmeme.com/img/a5/a513a0245a5f0382c8a823cbd1017024f70442c0c1800400281cec8057a10c12.jpg)
