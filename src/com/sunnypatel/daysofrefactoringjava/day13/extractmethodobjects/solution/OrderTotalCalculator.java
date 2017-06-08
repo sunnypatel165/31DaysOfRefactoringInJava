@@ -8,6 +8,7 @@ public class OrderTotalCalculator {
 	private List<Double> discounts = new ArrayList<>();
 	private double tax;
 	private double subtotal = 0;
+	private double netTax =0 ;
 	
 	public OrderTotalCalculator(Order order){
 		this.orderLineItems = order.getOrderLineItems();
@@ -18,7 +19,7 @@ public class OrderTotalCalculator {
 		calculateTotal();
 		subtractDiscounts();
 		calculateTax();
-		return subtotal + tax;
+		return subtotal + netTax;
 	}
 	/* Note from Sunny:
 	 * I don't like how the below methods are void and are updating the members. 
@@ -36,7 +37,7 @@ public class OrderTotalCalculator {
 		});
 	}
 	public void calculateTax(){
-		tax = subtotal * tax;
+		netTax = subtotal * tax;
 	}
 
 }
