@@ -1,28 +1,28 @@
 package com.sunnypatel.daysofrefactoringjava.day11.switchtostrategy.problem;
 
 public class ShippingInfo {
-	public int CalculateShippingAmount(State shipToState) {
+	public int calculateShippingAmount(State shipToState) {
 		switch (shipToState) {
-		case Alaska:
-			return GetAlaskaShippingAmount();
-		case NewYork:
-			return GetNewYorkShippingAmount();
-		case Florida:
-			return GetFloridaShippingAmount();
-		default:
-			return 0;
+			case Alaska:
+				return getAlaskaShippingAmount();
+			case NewYork:
+				return getNewYorkShippingAmount();
+			case Florida:
+				return getFloridaShippingAmount();
+			default:
+				return 0;
 		}
 	}
 
-	private int GetFloridaShippingAmount() {
+	private int getFloridaShippingAmount() {
 		return 15;
 	}
 
-	private int GetNewYorkShippingAmount() {
+	private int getNewYorkShippingAmount() {
 		return 10;
 	}
 
-	private int GetAlaskaShippingAmount() {
+	private int getAlaskaShippingAmount() {
 		return 3;
 	}
 
