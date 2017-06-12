@@ -22,36 +22,36 @@ Feel free to contribute! :D
 
 #### Contents:
 
-[Day 1 - Encapsulate Collection](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day1/encapsulatecollection)
+[Day 1 - Encapsulate Collection](src/com/sunnypatel/daysofrefactoringjava/day1/encapsulatecollection)
 
-[Day 2 - Move Method](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day2/movemethod)
+[Day 2 - Move Method](src/com/sunnypatel/daysofrefactoringjava/day2/movemethod)
 
-[Day 3 - Pull Up Method](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day3/pullupmethod)
+[Day 3 - Pull Up Method](src/com/sunnypatel/daysofrefactoringjava/day3/pullupmethod)
 
-[Day 4 - Push Down Method](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day4/pushdownmethod)
+[Day 4 - Push Down Method](src/com/sunnypatel/daysofrefactoringjava/day4/pushdownmethod)
 
-[Day 5 - Pull Up Field](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day5/pullupfield)
+[Day 5 - Pull Up Field](src/com/sunnypatel/daysofrefactoringjava/day5/pullupfield)
 
-[Day 6 - Push Down Field](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day6/pushdownfield)
+[Day 6 - Push Down Field](src/com/sunnypatel/daysofrefactoringjava/day6/pushdownfield)
 
-[Day 7 - Rename](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day7/rename)
+[Day 7 - Rename](src/com/sunnypatel/daysofrefactoringjava/day7/rename)
 
-[Day 8 - Replace Inheritence with Delegation](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day8/replaceinheritencewithdelegation)
+[Day 8 - Replace Inheritence with Delegation](src/com/sunnypatel/daysofrefactoringjava/day8/replaceinheritencewithdelegation)
 
-[Day 9 - Extract Interface](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day9/extractinterface)
+[Day 9 - Extract Interface](src/com/sunnypatel/daysofrefactoringjava/day9/extractinterface)
 
-[Day 10 - Extract Method](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day10/extractmethod)
+[Day 10 - Extract Method](src/com/sunnypatel/daysofrefactoringjava/day10/extractmethod)
 
-[Day 11 - Switch To Strategy ](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day11/switchtostrategy)
+[Day 11 - Switch To Strategy ](src/com/sunnypatel/daysofrefactoringjava/day11/switchtostrategy)
 
-[Day 12 - Break Dependencies ](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day12/breakdependencies)
+[Day 12 - Break Dependencies ](src/com/sunnypatel/daysofrefactoringjava/day12/breakdependencies)
 
-[Day 13 - Extract Method Objects ](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day13/extractmethodobjects)
+[Day 13 - Extract Method Objects ](src/com/sunnypatel/daysofrefactoringjava/day13/extractmethodobjects)
 
-[Day 14 - Break Responsibilities ](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day14/breakresponsibilities)
+[Day 14 - Break Responsibilities ](src/com/sunnypatel/daysofrefactoringjava/day14/breakresponsibilities)
 
-[Day 15 - Remove Duplication ](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day15/removeduplication)
+[Day 15 - Remove Duplication ](src/com/sunnypatel/daysofrefactoringjava/day15/removeduplication)
 
-[Day 16 - Encapsulate Conditional ](https://github.com/sunnypatel165/31DaysOfRefactoringInJava/tree/master/src/com/sunnypatel/daysofrefactoringjava/day16/encapsulateconditional)
+[Day 16 - Encapsulate Conditional ](src/com/sunnypatel/daysofrefactoringjava/day16/encapsulateconditional)
 
 ![Motivation](http://s2.quickmeme.com/img/a5/a513a0245a5f0382c8a823cbd1017024f70442c0c1800400281cec8057a10c12.jpg)
