@@ -54,4 +54,6 @@ Feel free to contribute! :D
 
 [Day 16 - Encapsulate Conditional ](src/com/sunnypatel/daysofrefactoringjava/day16/encapsulateconditional)
 
+[Day 17 - Extract Superclass ](src/com/sunnypatel/daysofrefactoringjava/day17/extractsuperclass)
+
 ![Motivation](http://s2.quickmeme.com/img/a5/a513a0245a5f0382c8a823cbd1017024f70442c0c1800400281cec8057a10c12.jpg)
