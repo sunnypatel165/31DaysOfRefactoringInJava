@@ -56,4 +56,6 @@ Feel free to contribute! :D
 
 [Day 17 - Extract Superclass ](src/com/sunnypatel/daysofrefactoringjava/day17/extractsuperclass)
 
+[Day 18 - Replace Exceptions With Conditional](src/com/sunnypatel/daysofrefactoringjava/day18/replaceexceptionwithconditional)
+
 ![Motivation](http://s2.quickmeme.com/img/a5/a513a0245a5f0382c8a823cbd1017024f70442c0c1800400281cec8057a10c12.jpg)
