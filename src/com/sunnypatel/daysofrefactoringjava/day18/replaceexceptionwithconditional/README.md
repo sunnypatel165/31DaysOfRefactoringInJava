@@ -58,6 +58,7 @@ public class Microwave {
 ```
  
  ##Original C# Code from the book:
+ ```cs
 public class Microwave {
 	private IMicrowaveMotor Motor { get; set;}
 	public bool Start(object food) {
@@ -83,3 +84,4 @@ public class Microwave {
   		return true;
   	}
 } 
+```
