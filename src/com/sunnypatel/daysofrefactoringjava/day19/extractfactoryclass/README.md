@@ -1,12 +1,12 @@
-Todays refactoring was first coined by the GangOfFour and has many resources on the web that have
+Todays refactoring was first coined by the [GangOfFour](http://www.dofactory.com/) and has many resources on the web that have
 different usages of this pattern. 
-Two different aims of the factory pattern can be found on the GoF website here and here.
+Two different aims of the factory pattern can be found on the GoF website [here](http://dofactory.com/Patterns/PatternFactory.aspx) and [here](http://dofactory.com/Patterns/PatternAbstract.aspx).
 
 Often in code some involved setup of objects is required in order to get them into a state where we can begin working with them. 
 Usually this setup is nothing more than creating a new instance of the object and working with it in whatever manner we need. 
 Sometimes however the creation requirements of this object may grow and clouds the original code that was used to create the object. 
 This is where a Factory class comes into play. 
-For a full description of the factory pattern you can read more here. 
+For a full description of the factory pattern you can [read more here](http://en.wikipedia.org/wiki/Factory_method_pattern). 
 On the complex endof the factory pattern is for creating families of objects using Abstract Factory. 
 Our usage is on the basic end where we have one factory class creating one specific instance for us. Take a look at the code before:
 
