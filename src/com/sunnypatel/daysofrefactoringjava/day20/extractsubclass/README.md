@@ -1,4 +1,4 @@
-Todays refactoring comes from Martin Fowlers catalog of patterns. You can find this refactoring in his catalog here.
+Todays refactoring comes from Martin Fowlers catalog of patterns. You can find this refactoring in his catalog [here](http://refactoring.com/catalog/extractSubclass.html).
 
 This refactoring is useful when you have methods on a base class that are not shared amongst all classes and needs to be pushed down into it’s own class. 
 The example I’m using here is pretty straightforward. 
