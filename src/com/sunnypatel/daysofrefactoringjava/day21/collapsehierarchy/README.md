@@ -1,4 +1,4 @@
-Todays refactoring comes from Martin Fowlers catalog of patterns. You can find this refactoring in his catalog here
+Todays refactoring comes from Martin Fowlers catalog of patterns. You can find this refactoring in his catalog [here](http://refactoring.com/catalog/collapseHierarchy.html).
 
 Yesterday we looked at extracting a subclass for moving responsibilities down if they are not needed across the board. 
 A Collapse Hierarchy refactoring would be applied when you realize you no longer need a subclass.
