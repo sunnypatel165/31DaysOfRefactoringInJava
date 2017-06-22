@@ -53,6 +53,8 @@ public class CashRegister {
 As you can see the AcceptPayment method has a couple of things that can be decomposed into targeted
 methods. So we perform the Extract Method refactoring a number of times until we come up with the
 result: 
+
+```Java
 public class Product {
 	private double price;
 	private double discount;
