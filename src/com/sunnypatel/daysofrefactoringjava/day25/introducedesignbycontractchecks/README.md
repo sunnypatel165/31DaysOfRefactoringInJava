@@ -55,7 +55,7 @@ public class CashRegister {
 		return orderTotal;
 	}
 }
-
+```
 The changes we can make here to introduce DBC checks is pretty easy. 
 First we will assert that we don’t have a null customer, check that we have at least one product to total. 
 Before we return the order total we will ensure that we have a valid amount for the order total. 
@@ -129,6 +129,7 @@ NullReferenceException without detailed information.
 
 
 #### Original C# code from the book:
+```cs
 public class CashRegister {
 	public decimal TotalOrder(IEnumerable<Product> products, Customer customer) {
 		decimal orderTotal = products.Sum(product => product.Price);
@@ -156,3 +157,4 @@ public class CashRegister {
 		return orderTotal;
 	}
 }
+```
