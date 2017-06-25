@@ -74,6 +74,7 @@ public class Order {
 ```
 
 #### Original C# Code from the book
+```cs
 public class Order {
 	public void Checkout(IEnumerable<Product> products, Customer customer) {
 		if (!customer.IsNotFlagged) {
