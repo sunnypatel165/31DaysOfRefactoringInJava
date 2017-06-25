@@ -72,4 +72,6 @@ Feel free to contribute! :D
 
 [Day 25 - Introduce Design by Contract Checks](src/com/sunnypatel/daysofrefactoringjava/day25/introducedesignbycontractchecks)
 
+[Day 26 - Remove Double Negative](src/com/sunnypatel/daysofrefactoringjava/day26/removedoublenegative)
+
 ![Motivation](http://s2.quickmeme.com/img/a5/a513a0245a5f0382c8a823cbd1017024f70442c0c1800400281cec8057a10c12.jpg)
