@@ -44,7 +44,7 @@ public abstract class Vehicle {
 
 public class Car extends Vehicle{
 	public void turn(Direction direction){
-		//Add the logic of car turning. 
+		//Add the logic of car turning.
 	}
 }
 
@@ -56,51 +56,52 @@ public class MotorCycle extends Vehicle{
 }
 ```
 
-#### Original C# Code from the book: 
+#### Original C# Code from the book:
+```cs
+public abstract class Vehicle
+{
+	// other methods
+}
+
+public class Car : Vehicle
+{
+	public void Turn(Direction direction)
+	{
+		// code here
+	}
+}
+
+public class Motorcycle : Vehicle
+{
+}
+
+public enum Direction
+{
+	Left,
+	Right
+}
 ```
- 	1: public abstract class Vehicle
- 	2: {
- 	3: 		// other methods
- 	4: }
- 	5:
- 	6: public class Car : Vehicle
- 	7: {
- 	8: 		public void Turn(Direction direction)
- 	9: 		{
- 	10: 		// code here
- 	11: 	}
- 	12: }
- 	13:
- 	14: public class Motorcycle : Vehicle
- 	15: {
- 	16: }
- 	17:
- 	18: public enum Direction
- 	19: {
- 	20: 	Left,
- 	21: 	Right
- 	22: }
- 	
- 	
- 	1: public abstract class Vehicle
- 	2: {
- 	3: 		public void Turn(Direction direction)
- 	4: 		{
- 	5: 			// code here
- 	6: 		}
- 	7: }
- 	8:
- 	9: public class Car : Vehicle
- 	10: {
- 	11: }
- 	12:
- 	13: public class Motorcycle : Vehicle
- 	14: {
- 	15: }
- 	16:
- 	17: public enum Direction
- 	18: {
- 	19: 	Left,
- 	20: 	Right
- 	21: } 
+
+```cs
+public abstract class Vehicle
+{
+	public void Turn(Direction direction)
+	{
+		// code here
+	}
+}
+
+public class Car : Vehicle
+{
+}
+
+public class Motorcycle : Vehicle
+{
+}
+
+public enum Direction
+{
+	Left,
+	Right
+}
 ```
