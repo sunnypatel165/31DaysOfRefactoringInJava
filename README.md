@@ -78,4 +78,6 @@ Feel free to contribute! :D
 
 [Day 28 - Remove Boolean Method](src/com/sunnypatel/daysofrefactoringjava/day28/renamebooleanmethod)
 
+[Day 29 - Remove Middle Man](src/com/sunnypatel/daysofrefactoringjava/day29/removemiddleman)
+
 ![Motivation](http://s2.quickmeme.com/img/a5/a513a0245a5f0382c8a823cbd1017024f70442c0c1800400281cec8057a10c12.jpg)
