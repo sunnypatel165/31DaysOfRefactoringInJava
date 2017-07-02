@@ -6,15 +6,15 @@ public class Receipt {
 	private List<Integer> itemTotals = new ArrayList<>();
 
 	private double subTotal = 0.0;
-	
+
 	public double calculateGrandTotal(){
 		itemTotals.forEach(item -> subTotal += item);
-		
+
 		if(discounts.size() > 0 )
 			discounts.forEach(discount -> subTotal -= discount);
-		
+
 		double tax = subTotal * 0.065;
-		
+
 		subTotal = subTotal + tax;
 		return subTotal;
 	}
@@ -55,71 +55,74 @@ This refactoring comes from Martin Fowler and can be found at: https://refactori
 
 #### Original C# code from the book:
 
+```cs
+public class Receipt
+{
+    private IList<decimal> Discounts { get; set; }
+    private IList<decimal> ItemTotals { get; set; }
+
+    public decimal CalculateGrandTotal()
+    {
+        decimal subTotal = 0m;
+        foreach (decimal itemTotal in ItemTotals)
+            subTotal += itemTotal;
+
+        if (Discounts.Count > 0)
+        {
+            foreach (decimal discount in Discounts)
+                subTotal -= discount;
+        }
+
+        decimal tax = subTotal * 0.065m;
+
+        subTotal += tax;
+
+        return subTotal;
+    }
+}
 ```
-   1: public class Receipt
-   2: {
-   3:     private IList<decimal> Discounts { get; set; }
-   4:     private IList<decimal> ItemTotals { get; set; }
-   5:  
-   6:     public decimal CalculateGrandTotal()
-   7:     {
-   8:         decimal subTotal = 0m;
-   9:         foreach (decimal itemTotal in ItemTotals)
-  10:             subTotal += itemTotal;
-  11:  
-  12:         if (Discounts.Count > 0)
-  13:         {
-  14:             foreach (decimal discount in Discounts)
-  15:                 subTotal -= discount;
-  16:         }
-  17:  
-  18:         decimal tax = subTotal * 0.065m;
-  19:  
-  20:         subTotal += tax;
-  21:  
-  22:         return subTotal;
-  23:     }
-  24: }
-  
-   1: public class Receipt
-   2: {
-   3:     private IList<decimal> Discounts { get; set; }
-   4:     private IList<decimal> ItemTotals { get; set; }
-   5:  
-   6:     public decimal CalculateGrandTotal()
-   7:     {
-   8:         decimal subTotal = CalculateSubTotal();
-   9:  
-  10:         subTotal = CalculateDiscounts(subTotal);
-  11:  
-  12:         subTotal = CalculateTax(subTotal);
-  13:  
-  14:         return subTotal;
-  15:     }
-  16:  
-  17:     private decimal CalculateTax(decimal subTotal)
-  18:     {
-  19:         decimal tax = subTotal * 0.065m;
-  20:  
-  21:         subTotal += tax;
-  22:         return subTotal;
-  23:     }
-  24:  
-  25:     private decimal CalculateDiscounts(decimal subTotal)
-  26:     {
-  27:         if (Discounts.Count > 0)
-  28:         {
-  29:             foreach (decimal discount in Discounts)
-  30:                 subTotal -= discount;
-  31:         }
-  32:         return subTotal;
-  33:     }
-  34:  
-  35:     private decimal CalculateSubTotal()
-  36:     {
-  37:         decimal subTotal = 0m;
-  38:         foreach (decimal itemTotal in ItemTotals)
-  39:             subTotal += itemTotal;
-  40:         return subTotal;
-  41:     }
-  42: }
+
+```cs  
+public class Receipt
+{
+    private IList<decimal> Discounts { get; set; }
+    private IList<decimal> ItemTotals { get; set; }
+
+    public decimal CalculateGrandTotal()
+    {
+        decimal subTotal = CalculateSubTotal();
+
+        subTotal = CalculateDiscounts(subTotal);
+
+        subTotal = CalculateTax(subTotal);
+
+        return subTotal;
+    }
+
+    private decimal CalculateTax(decimal subTotal)
+    {
+        decimal tax = subTotal * 0.065m;
+
+        subTotal += tax;
+        return subTotal;
+    }
+
+    private decimal CalculateDiscounts(decimal subTotal)
+    {
+        if (Discounts.Count > 0)
+        {
+            foreach (decimal discount in Discounts)
+                subTotal -= discount;
+        }
+        return subTotal;
+    }
+
+    private decimal CalculateSubTotal()
+    {
+        decimal subTotal = 0m;
+        foreach (decimal itemTotal in ItemTotals)
+            subTotal += itemTotal;
+        return subTotal;
+    }
+}
+```
