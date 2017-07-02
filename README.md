@@ -82,4 +82,6 @@ Feel free to contribute! :D
 
 [Day 30 - Return ASAP](src/com/sunnypatel/daysofrefactoringjava/day30/returnasap)
 
+[Day 31 - Replace Conditional With Polymorphism](src/com/sunnypatel/daysofrefactoringjava/day31/replaceconditionalwithpolymorphism)
+
 ![Motivation](http://s2.quickmeme.com/img/a5/a513a0245a5f0382c8a823cbd1017024f70442c0c1800400281cec8057a10c12.jpg)
