@@ -36,30 +36,32 @@ public class Person
     }
 }
 ```
-   
-  
-  #### Original C# Code from the book
-  ```
-   1: public class Person
-   2: {
-   3:     public string FN { get; set; }
-   4:  
-   5:     public decimal ClcHrlyPR()
-   6:     {
-   7:         // code to calculate hourly payrate
-   8:         return 0m;
-   9:     }
-  10: }
-  
-   1: // Changed the class name to Employee
-   2: public class Employee
-   3: {
-   4:     public string FirstName { get; set; }
-   5:  
-   6:     public decimal CalculateHourlyPay()
-   7:     {
-   8:         // code to calculate hourly payrate
-   9:         return 0m;
-  10:     }
-  11: }
-  ```
+
+
+#### Original C# Code from the book
+```cs
+public class Person
+{
+    public string FN { get; set; }
+
+    public decimal ClcHrlyPR()
+    {
+        // code to calculate hourly payrate
+        return 0m;
+    }
+}
+```
+
+```cs
+// Changed the class name to Employee
+public class Employee
+{
+    public string FirstName { get; set; }
+
+    public decimal CalculateHourlyPay()
+    {
+        // code to calculate hourly payrate
+        return 0m;
+    }
+}
+```
