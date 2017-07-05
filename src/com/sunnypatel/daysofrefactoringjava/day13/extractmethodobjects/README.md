@@ -138,102 +138,74 @@ public class OrderTotalCalculator {
  #### Original C# code from the book:
  
  ```cs
- 1: public class OrderLineItem
- 2: {
- 3: public decimal Price { get; private set; }
- 4: }
- 5:
- 6: public class Order
- 7: {
- 8: private IList<OrderLineItem> OrderLineItems { get; set; }
- 9: private IList<decimal> Discounts { get; set; }
- 10: private decimal Tax { get; set; }
- 11:
- 12: public decimal Calculate()
- 13: {
- 14: decimal subTotal = 0m;
- 15:
- 16: // Total up line items
- 17: foreach (OrderLineItem lineItem in OrderLineItems)
- 18: {
- 19: subTotal += lineItem.Price;
- 20: }
- 21:
- 22: // Subtract Discounts
- 23: foreach (decimal discount in Discounts)
- 24: subTotal -= discount;
- 25:
- 26: // Calculate Tax
- 27: decimal tax = subTotal * Tax;
- 28:
- 29: // Calculate GrandTotal
- 30: decimal grandTotal = subTotal + tax;
- 31:
- 32: return grandTotal;
- 33: }
- 34: }
+public class OrderLineItem {
+	public decimal Price { get; private set; }
+}
+public class Order {
+	private IList<OrderLineItem> OrderLineItems { get; set; }
+	private IList<decimal> Discounts { get; set; }
+ 	private decimal Tax { get; set; }
+	public decimal Calculate() {
+		decimal subTotal = 0m;
+	
+		// Total up line items
+		foreach (OrderLineItem lineItem in OrderLineItems) { 
+			subTotal += lineItem.Price;
+		}
+	
+		// Subtract Discounts
+		foreach (decimal discount in Discounts)
+			subTotal -= discount;
+			
+		// Calculate Tax
+		decimal tax = subTotal * Tax;
+		// Calculate GrandTotal
+		decimal grandTotal = subTotal + tax;
+		return grandTotal;
+	}
+}
  
  
- 1: public class OrderLineItem
- 2: {
- 3: public decimal Price { get; private set;}
- 4: }
- 5:
- 6: public class Order
- 7: {
- 8: public IEnumerable<OrderLineItem> OrderLineItems { get; private set;}
- 9: public IEnumerable<decimal> Discounts { get; private set; }
- 10: public decimal Tax { get; private set; } 
- 11:
- 12: public decimal Calculate()
- 13: {
- 14: return new OrderCalculator(this).Calculate();
- 15: }
- 16: }
- 17:
- 18: public class OrderCalculator
- 19: {
- 20: private decimal SubTotal { get; set;}
- 21: private IEnumerable<OrderLineItem> OrderLineItems { get; set; }
- 22: private IEnumerable<decimal> Discounts { get; set; }
- 23: private decimal Tax { get; set; }
- 24:
- 25: public OrderCalculator(Order order)
- 26: {
- 27: OrderLineItems = order.OrderLineItems;
- 28: Discounts = order.Discounts;
- 29: Tax = order.Tax;
- 30: }
- 31:
- 32: public decimal Calculate()
- 33: {
- 34: CalculateSubTotal();
- 35:
- 36: SubtractDiscounts();
- 37:
- 38: CalculateTax();
- 39:
- 40: return SubTotal;
- 41: }
- 42:
- 43: private void CalculateSubTotal()
- 44: {
- 45: // Total up line items
- 46: foreach (OrderLineItem lineItem in OrderLineItems)
- 47: SubTotal += lineItem.Price;
- 48: }
- 49:
- 50: private void SubtractDiscounts()
- 51: {
- 52: // Subtract Discounts
- 53: foreach (decimal discount in Discounts)
- 54: SubTotal -= discount;
- 55: }
- 56:
- 57: private void CalculateTax()
- 58: {
- 59: // Calculate Tax
- 60: SubTotal += SubTotal * Tax;
- 61: }
- 62: } 
- 
+public class OrderLineItem {
+	public decimal Price { get; private set;}
+}
+public class Order {
+	public IEnumerable<OrderLineItem> OrderLineItems { get; private set;}
+	public IEnumerable<decimal> Discounts { get; private set; }
+	public decimal Tax { get; private set; }
+	 public decimal Calculate() {
+	 	return new OrderCalculator(this).Calculate();
+	 }
+}
+public class OrderCalculator {
+	private decimal SubTotal { get; set;}
+	private IEnumerable<OrderLineItem> OrderLineItems { get; set; }
+	private IEnumerable<decimal> Discounts { get; set; }
+	private decimal Tax { get; set; }
+	public OrderCalculator(Order order) {
+		OrderLineItems = order.OrderLineItems;
+		Discounts = order.Discounts;
+		Tax = order.Tax;
+	}
+	public decimal Calculate() {
+		CalculateSubTotal(); 
+		SubtractDiscounts();
+		CalculateTax();
+		return SubTotal;
+	}
+	private void CalculateSubTotal() {
+		// Total up line items
+		foreach (OrderLineItem lineItem in OrderLineItems)
+			SubTotal += lineItem.Price;
+		}
+	private void SubtractDiscounts() {
+		// Subtract Discounts
+		foreach (decimal discount in Discounts)
+			SubTotal -= discount;
+		}
+	private void CalculateTax() {
+		// Calculate Tax
+		SubTotal += SubTotal * Tax;
+	}
+} 
+```

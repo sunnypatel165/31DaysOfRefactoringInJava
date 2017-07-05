@@ -87,40 +87,30 @@ public class RemoteControl {
 ```
  
  #### Original C# code from the book:
- ```cs
- 1: public class RemoteControl
- 2: {
- 3: private string[] Functions { get; set; }
- 4: private string Name { get; set; }
- 5: private int CreatedYear { get; set; }
- 6:
- 7: public string PerformCoolFunction(string buttonPressed)
- 8: {
- 9: // Determine if we are controlling some extra function
- 10: // that requires special conditions
- 11: if (Functions.Length > 1 && Name == "RCA" &&
- CreatedYear > DateTime.Now.Year - 2)
- 12: return "doSomething";
- 13: }
- 14: }
+```cs
+public class RemoteControl {
+	private string[] Functions { get; set; }
+	private string Name { get; set; }
+	private int CreatedYear { get; set; }
+	public string PerformCoolFunction(string buttonPressed) {
+		// Determine if we are controlling some extra function
+		// that requires special conditions
+		if (Functions.Length > 1 && Name == "RCA" && CreatedYear > DateTime.Now.Year - 2)
+			return "doSomething";
+	}
+}
  
- 1: public class RemoteControl
- 2: {
- 3: private string[] Functions { get; set; }
- 4: private string Name { get; set; }
- 5: private int CreatedYear { get; set; }
- 6:
- 7: private bool HasExtraFunctions
- 8: {
- 9: get { return Functions.Length > 1 && Name == "RCA" &&
- CreatedYear > DateTime.Now.Year - 2; }
- 10: }
- 11:
- 12: public string PerformCoolFunction(string buttonPressed)
- 13: {
- 14: // Determine if we are controlling some extra function
- 15: // that requires special conditions
- 16: if (HasExtraFunctions)
- 17: return "doSomething";
- 18: }
- 19: } 
+public class RemoteControl {
+	private string[] Functions { get; set; }
+	private string Name { get; set; }
+	private int CreatedYear { get; set; }
+	private bool HasExtraFunctions {
+		get { return Functions.Length > 1 && Name == "RCA" && CreatedYear > DateTime.Now.Year - 2; }
+	}
+	public string PerformCoolFunction(string buttonPressed) {
+		// Determine if we are controlling some extra function
+		// that requires special conditions
+		if (HasExtraFunctions)
+			return "doSomething";
+	}
+}``` 
