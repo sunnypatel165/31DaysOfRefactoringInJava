@@ -91,51 +91,33 @@ public class Video {
 ```
  
  #### original C# code from the book:
- ```cs
- 1: public class Video
- 2: {
- 3: public void PayFee(decimal fee)
- 4: {
- 5: }
- 6:
- 7: public void RentVideo(Video video, Customer customer)
- 8: {
- 9: customer.Videos.Add(video);
- 10: }
- 11:
- 12: public decimal CalculateBalance(Customer customer)
- 13: {
- 14: return customer.LateFees.Sum();
- 15: }
- 16: }
- 17:
- 18: public class Customer
- 19: {
- 20: public IList<decimal> LateFees { get; set; }
- 21: public IList<Video> Videos { get; set; }
- 22: }
- 
- 1: public class Video
- 2: {
- 3: public void RentVideo(Video video, Customer customer)
- 4: {
- 5: customer.Videos.Add(video);
- 6: }
- 7: }
- 8:
- 9: public class Customer
- 10: {
- 11: public IList<decimal> LateFees { get; set; }
- 12: public IList<Video> Videos { get; set; }
- 13:
- 14: public void PayFee(decimal fee)
- 15: {
- 16: }
- 17:
- 18: public decimal CalculateBalance(Customer customer)
- 19: {
- 20: return customer.LateFees.Sum();
- 21: }
- 22: } 
- 
- ```
+```cs
+public class Video {
+	public void PayFee(decimal fee) {
+	}
+	public void RentVideo(Video video, Customer customer) {
+		customer.Videos.Add(video);
+		}
+	public decimal CalculateBalance(Customer customer) {
+		return customer.LateFees.Sum();
+	}
+}
+public class Customer {
+	public IList<decimal> LateFees { get; set; }
+	public IList<Video> Videos { get; set; }
+}
+public class Video {
+	public void RentVideo(Video video, Customer customer) {
+		customer.Videos.Add(video);
+	}
+}
+public class Customer {
+	public IList<decimal> LateFees { get; set; }
+	public IList<Video> Videos { get; set; }
+	public void PayFee(decimal fee) {
+	}
+	public decimal CalculateBalance(Customer customer) {
+		return customer.LateFees.Sum();
+	}
+} 
+```
