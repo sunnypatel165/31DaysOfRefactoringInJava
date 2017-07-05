@@ -21,7 +21,7 @@ public class SavingsAccount extends Account {
 	public int getMinimumBalance() {
 		return minimumAccountBalance;
 	}
-	
+
 }
 ```
 In this example, we have a constant value that is duplicated between two derived classes. To promote reuse we can pull up the field into the base class and rename it for brevity.
@@ -45,35 +45,36 @@ public class SavingsAccount extends Account {
 
 }
 ```
-  
-  
- #### Original C# code from the book:
- ``` 
-   1: public abstract class Account
-   2: {
-   3: }
-   4:  
-   5: public class CheckingAccount : Account
-   6: {
-   7:     private decimal _minimumCheckingBalance = 5m;
-   8: }
-   9:  
-  10: public class SavingsAccount : Account
-  11: {
-  12:     private decimal _minimumSavingsBalance = 5m;
-  13: }
-  
-  
-   1: public abstract class Account
-   2: {
-   3:     protected decimal _minimumBalance = 5m;
-   4: }
-   5:  
-   6: public class CheckingAccount : Account
-   7: {
-   8: }
-   9:  
-  10: public class SavingsAccount : Account
-  11: {
-  12: }
-  ```
+
+
+#### Original C# code from the book:
+```cs
+public abstract class Account
+{
+}
+
+public class CheckingAccount : Account
+{
+    private decimal _minimumCheckingBalance = 5m;
+}
+
+public class SavingsAccount : Account
+{
+    private decimal _minimumSavingsBalance = 5m;
+}
+```
+
+```cs
+public abstract class Account
+{
+    protected decimal _minimumBalance = 5m;
+}
+
+public class CheckingAccount : Account
+{
+}
+
+public class SavingsAccount : Account
+{
+}
+```

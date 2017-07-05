@@ -16,7 +16,7 @@ public class AccountInterest {
 		return bankAccount.calculateInterestRate() < 0.05;
 	}
 }
-	
+
 public class BankAccount {
 	private int accountAge;
 	private int creditStore;
@@ -68,13 +68,13 @@ In the end you would end up with something like this:
 
 ```Java
 public class AccountInterest {
-	
+
 	private BankAccount bankAccount;
 
 	public AccountInterest(BankAccount bankAccount) {
 		this.bankAccount = bankAccount;
 	}
-	
+
 	public double getInterestRate(){
 		return this.calculateInterestRate();
 	}
@@ -86,7 +86,7 @@ public class AccountInterest {
 			return 0.02;
 		if(bankAccount.getAccountAge() > 10)
 			return 0.03;
-		
+
 		return 0.05;
 	}
 }
@@ -130,96 +130,96 @@ public class BankAccount {
 Simple enough!
 
 #### Original C# code from the book:
+```cs
+public class BankAccount
+{
+    public BankAccount(int accountAge, int creditScore, AccountInterest accountInterest)
+    {
+        AccountAge = accountAge;
+        CreditScore = creditScore;
+        AccountInterest = accountInterest;
+    }
+
+    public int AccountAge { get; private set; }
+    public int CreditScore { get; private set; }
+    public AccountInterest AccountInterest { get; private set; }
+
+    public double CalculateInterestRate()
+    {
+        if (CreditScore > 800)
+            return 0.02;
+
+        if (AccountAge > 10)
+            return 0.03;
+
+        return 0.05;
+    }
+}
+
+public class AccountInterest
+{
+    public BankAccount Account { get; private set; }
+
+    public AccountInterest(BankAccount account)
+    {
+        Account = account;
+    }
+
+    public double InterestRate
+    {
+        get { return Account.CalculateInterestRate(); }
+    }
+
+    public bool IntroductoryRate
+    {
+        get { return Account.CalculateInterestRate() < 0.05; }
+    }
+}
 ```
-   1: public class BankAccount
-   2: {
-   3:     public BankAccount(int accountAge, int creditScore, AccountInterest accountInterest)
-   4:     {
-   5:         AccountAge = accountAge;
-   6:         CreditScore = creditScore;
-   7:         AccountInterest = accountInterest;
-   8:     }
-   9:  
-  10:     public int AccountAge { get; private set; }
-  11:     public int CreditScore { get; private set; }
-  12:     public AccountInterest AccountInterest { get; private set; }
-  13:  
-  14:     public double CalculateInterestRate()
-  15:     {
-  16:         if (CreditScore > 800)
-  17:             return 0.02;
-  18:  
-  19:         if (AccountAge > 10)
-  20:             return 0.03;
-  21:  
-  22:         return 0.05;
-  23:     }
-  24: }
-  25:  
-  26: public class AccountInterest
-  27: {
-  28:     public BankAccount Account { get; private set; }
-  29:  
-  30:     public AccountInterest(BankAccount account)
-  31:     {
-  32:         Account = account;
-  33:     }
-  34:  
-  35:     public double InterestRate
-  36:     {
-  37:         get { return Account.CalculateInterestRate(); }
-  38:     }
-  39:  
-  40:     public bool IntroductoryRate
-  41:     {
-  42:         get { return Account.CalculateInterestRate() < 0.05; }
-  43:     }
-  44: }
-  
-  
-   1: public class BankAccount
-   2: {
-   3:     public BankAccount(int accountAge, int creditScore, AccountInterest accountInterest)
-   4:     {
-   5:         AccountAge = accountAge;
-   6:         CreditScore = creditScore;
-   7:         AccountInterest = accountInterest;
-   8:     }
-   9:  
-  10:     public int AccountAge { get; private set; }
-  11:     public int CreditScore { get; private set; }
-  12:     public AccountInterest AccountInterest { get; private set; }
-  13: }
-  14:  
-  15: public class AccountInterest
-  16: {
-  17:     public BankAccount Account { get; private set; }
-  18:  
-  19:     public AccountInterest(BankAccount account)
-  20:     {
-  21:         Account = account;
-  22:     }
-  23:  
-  24:     public double InterestRate
-  25:     {
-  26:         get { return CalculateInterestRate(); }
-  27:     }
-  28:  
-  29:     public bool IntroductoryRate
-  30:     {
-  31:         get { return CalculateInterestRate() < 0.05; }
-  32:     }
-  33:  
-  34:     public double CalculateInterestRate()
-  35:     {
-  36:         if (Account.CreditScore > 800)
-  37:             return 0.02;
-  38:  
-  39:         if (Account.AccountAge > 10)
-  40:             return 0.03;
-  41:  
-  42:         return 0.05;
-  43:     }
-  44: }
- ```
+
+```cs
+public class BankAccount
+{
+    public BankAccount(int accountAge, int creditScore, AccountInterest accountInterest)
+    {
+        AccountAge = accountAge;
+        CreditScore = creditScore;
+        AccountInterest = accountInterest;
+    }
+
+    public int AccountAge { get; private set; }
+    public int CreditScore { get; private set; }
+    public AccountInterest AccountInterest { get; private set; }
+}
+
+public class AccountInterest
+{
+    public BankAccount Account { get; private set; }
+
+    public AccountInterest(BankAccount account)
+    {
+        Account = account;
+    }
+
+    public double InterestRate
+    {
+        get { return CalculateInterestRate(); }
+    }
+
+    public bool IntroductoryRate
+    {
+        get { return CalculateInterestRate() < 0.05; }
+    }
+
+    public double CalculateInterestRate()
+    {
+        if (Account.CreditScore > 800)
+            return 0.02;
+
+        if (Account.AccountAge > 10)
+            return 0.03;
+
+        return 0.05;
+    }
+}
 ```

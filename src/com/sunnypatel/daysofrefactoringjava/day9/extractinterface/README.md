@@ -53,63 +53,65 @@ public class RegistrationProcessor {
 
 }
 ```
-  
+
 This refactoring was first published by Martin Fowler and can be found in his list of refactorings [here](http://refactoring.com/catalog/extractInterface.html).
 
 #### Original C# code from the book
 
+```cs
+public class ClassRegistration
+{
+    public void Create()
+    {
+        // create registration code
+    }
+
+    public void Transfer()
+    {
+        // class transfer code
+    }
+
+    public decimal Total { get; private set; }
+}
+
+public class RegistrationProcessor
+{
+    public decimal ProcessRegistration(ClassRegistration registration)
+    {
+        registration.Create();
+        return registration.Total;
+    }
+}
 ```
-   1: public class ClassRegistration
-   2: {
-   3:     public void Create()
-   4:     {
-   5:         // create registration code
-   6:     }
-   7:  
-   8:     public void Transfer()
-   9:     {
-  10:         // class transfer code
-  11:     }
-  12:  
-  13:     public decimal Total { get; private set; }
-  14: }
-  15:  
-  16: public class RegistrationProcessor
-  17: {
-  18:     public decimal ProcessRegistration(ClassRegistration registration)
-  19:     {
-  20:         registration.Create();
-  21:         return registration.Total;
-  22:     }
-  23: }
-  
-   1: public interface IClassRegistration
-   2: {
-   3:     void Create();
-   4:     decimal Total { get; }
-   5: }
-   6:  
-   7: public class ClassRegistration : IClassRegistration
-   8: {
-   9:     public void Create()
-  10:     {
-  11:         // create registration code
-  12:     }
-  13:  
-  14:     public void Transfer()
-  15:     {
-  16:         // class transfer code
-  17:     }
-  18:  
-  19:     public decimal Total { get; private set; }
-  20: }
-  21:  
-  22: public class RegistrationProcessor
-  23: {
-  24:     public decimal ProcessRegistration(IClassRegistration registration)
-  25:     {
-  26:         registration.Create();
-  27:         return registration.Total;
-  28:     }
-  29: }
+
+```cs
+public interface IClassRegistration
+{
+    void Create();
+    decimal Total { get; }
+}
+
+public class ClassRegistration : IClassRegistration
+{
+    public void Create()
+    {
+        // create registration code
+    }
+
+    public void Transfer()
+    {
+        // class transfer code
+    }
+
+    public decimal Total { get; private set; }
+}
+
+public class RegistrationProcessor
+{
+    public decimal ProcessRegistration(IClassRegistration registration)
+    {
+        registration.Create();
+        return registration.Total;
+    }
+}
 ```
